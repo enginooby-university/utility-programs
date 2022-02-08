@@ -1,0 +1,295 @@
+:root {
+  --non-full-width: 90%;
+  --title-font-family: BaskervilleBT, serif;
+  --aqua-dim: rgb(0, 190, 190);
+}
+
+@font-face {
+  font-family: BaskervilleBT;
+  src: url(BaskervilleBT.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+/*-------------------------
+  HERO
+-------------------------*/
+
+header {
+  background-image: url("./resources/MicrosoftTeams-image\ \(1\).png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100vh;
+}
+
+.hero-container {
+  width: var(--non-full-width);
+  margin: auto;
+  padding-top: 29%;
+}
+
+.zapisz {
+  color: white;
+  border: 2px solid white;
+  background-color: rgb(250, 250, 250, 0.2);
+  width: 42%;
+  height: 127px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 33px;
+  cursor: pointer;
+}
+
+.hero-text {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.text {
+  width: 42%;
+}
+
+/*-------------------------
+  O NAS
+-------------------------*/
+
+.o-nas {
+  height: 68vh;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  width: 82%;
+  margin: auto;
+  list-style-type: none;
+  padding: 30px 50px;
+  border-bottom: 2px solid black;
+}
+
+.services {
+  width: var(--non-full-width);
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+}
+
+.service {
+  width: 30%;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.service-img {
+  margin-bottom: 20px;
+}
+
+.special {
+  margin-bottom: 50px;
+}
+
+.service-text {
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.service-button {
+  margin-bottom: 30px;
+  width: 180px;
+  height: 60px;
+  background-color: aqua;
+  border: 1px solid rgb(78, 78, 78);
+}
+
+/*-------------------------
+  TYTUL
+-------------------------*/
+
+.tytul-text {
+  width: var(--non-full-width);
+  margin: auto;
+}
+
+.tytul-text h1 {
+  font-family: var(--title-font-family);
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.tytul-text h1::first-letter {
+  font-size: 160%;
+}
+
+.tytul-text p {
+  margin-bottom: 60px;
+}
+
+.tytul-image {
+  background-image: url("./resources/MicrosoftTeams-image\ \(6\).png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 45vh;
+  text-align: end;
+  margin-bottom: 60px;
+}
+
+.tytul-image-article {
+  width: 30%;
+  margin-right: 5%;
+  float: right;
+  text-align: right;
+  padding-top: 40px;
+}
+
+.tytul-image-article h1 {
+  font-family: var(--title-font-family);
+  color: rgb(253, 253, 253);
+  margin-bottom: 30px;
+}
+
+.tytul-image-article ::first-letter {
+  font-size: 160%;
+}
+
+.tytul-image-article p {
+  float: right;
+  width: 70%;
+  color: var(--aqua-dim);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/*-------------------------
+  TEGO
+-------------------------*/
+
+.tego-info {
+  width: var(--non-full-width);
+  display: flex;
+  margin: auto;
+  padding: 40px;
+  margin-bottom: 50px;
+}
+
+.tego-info-img {
+  width: 40%;
+}
+
+.tego-info-img img {
+  width: 64%;
+}
+
+.tego-info-text {
+  width: 60%;
+}
+
+.tego-info-text h2 {
+  font-family: var(--title-font-family);
+  margin-bottom: 20px;
+}
+
+.tego-info-text h2::first-letter {
+  font-size: 160%;
+}
+
+/*-------------------------
+  PARAG
+-------------------------*/
+
+.parag-container {
+  background-image: url("./resources/MicrosoftTeams-image\ \(2\).png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+}
+
+.parag {
+  width: var(--non-full-width);
+  margin: auto;
+}
+
+.parag-article {
+  width: 30%;
+  float: right;
+  text-align: right;
+  padding-top: 300px;
+}
+
+.parag-article h1 {
+  font-family: var(--title-font-family);
+  color: rgb(253, 253, 253);
+  margin-bottom: 30px;
+}
+
+.parag-article ::first-letter {
+  font-size: 160%;
+}
+
+.parag-article p {
+  float: right;
+  width: 70%;
+  color: var(--aqua-dim);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/*-------------------------
+  FOOTER
+-------------------------*/
+
+footer {
+  margin: auto;
+  background-color: rgb(47, 47, 47);
+  border-top: 5px solid rgb(195, 189, 189);
+}
+
+footer .links {
+  width: calc(var(--non-full-width) - 10%);
+  border-bottom: none;
+  justify-content: space-between;
+  padding: 50px 0;
+  color: white;
+}
+
+.footer-text {
+  width: calc(var(--non-full-width) - 10%);
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 80px;
+  color: var(--aqua-dim);
+}
+
+.footer-text p {
+  width: 25%;
+}
+
+.copyright {
+  text-align: center;
+  padding-bottom: 50px;
+  color: rgb(168, 168, 168);
+  background-color: rgb(47, 47, 47);
+}
